@@ -1,3 +1,28 @@
-nav {
-    background-color: gray;
+#nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin: 0;
+    text-align: right;
+    text-transform: uppercase;
+
+    &--title {
+        color: $secondary_color;
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: 5px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &--subtitle {
+        color: $secondary_color;
+        font-size: 1.55rem;
+        font-weight: 600;
+        float: right;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        opacity: .8;
+    }
 }
