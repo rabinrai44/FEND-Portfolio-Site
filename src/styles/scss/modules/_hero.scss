@@ -6,8 +6,25 @@
 
     &-inner {
     height: 400px;
-    background-image:url("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73970e97b923e72be9355cb15099091&auto=format&fit=crop&w=1294&q=80");
+    background-image:linear-gradient(rgba($secondary_color, 0.4), rgba($secondary_color, 0.8)), url("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73970e97b923e72be9355cb15099091&auto=format&fit=crop&w=1294&q=80");
     background-position: right;
     background-size: cover;
+    position: relative;
+    }
+
+    &-content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+
+        &--title {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            height: 100px
+        }
     }
 }
