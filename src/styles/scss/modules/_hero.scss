@@ -1,12 +1,19 @@
 .hero {
     float: left;
     margin-top: -20px;
+    padding-top: 0;
     width: 100%;
 
     &-inner {
-    height: 300px;
-    background-image: linear-gradient(rgba($secondary_color, .3), rgba($primary_color_2, .9)),url("../../images/coding_day.png");
-    background-position: center center;
+    height: 400px;
+    background-image:url("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73970e97b923e72be9355cb15099091&auto=format&fit=crop&w=1294&q=80");
+    background-position: right;
     background-size: cover;
+    opacity: .6;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
     }
 }

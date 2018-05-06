@@ -66,12 +66,17 @@ section {
 .hero {
   float: left;
   margin-top: -20px;
+  padding-top: 0;
   width: 100%; }
   .hero-inner {
-    height: 300px;
-    background-image: linear-gradient(rgba(51, 54, 59, 0.3), rgba(54, 140, 191, 0.9)), url("../../images/coding_day.png");
-    background-position: center center;
-    background-size: cover; }
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73970e97b923e72be9355cb15099091&auto=format&fit=crop&w=1294&q=80");
+    background-position: right;
+    background-size: cover;
+    opacity: .6;
+    transition: all 0.4s ease-in-out; }
+    .hero-inner:hover {
+      opacity: 1; }
 
 .header {
   height: 200px;
@@ -82,7 +87,7 @@ section {
   .header .wrapper {
     margin: 0 auto;
     padding: 0 auto;
-    border-bottom: 4px solid #7ebc59; }
+    border-bottom: 3px solid #7ebc59; }
 
 .logo {
   color: #7ebc59;
@@ -148,7 +153,9 @@ section {
     text-align: center; }
 
 .color-group {
-  display: block; }
+  display: block;
+  float: left;
+  height: 100%; }
   .color-group .color {
     margin-right: 15px;
     padding: 0;
@@ -163,3 +170,15 @@ section {
     background-color: #33363b; }
   .color-group .secondary-gray {
     background-color: #eaeaea; }
+
+.credits {
+  display: block;
+  float: left;
+  width: 100%; }
+  .credits a {
+    font-size: 14px;
+    padding-right: 7px;
+    border-right: 1px solid #eaeaea; }
+    .credits a:last-child {
+      padding-right: 0;
+      border: none; }

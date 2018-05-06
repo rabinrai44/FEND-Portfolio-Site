@@ -45,6 +45,8 @@
 
 .color-group {
     display: block;
+    float: left;
+    height: 100%;
 
     .color {
         margin-right: 15px;
@@ -67,5 +69,22 @@
 
     .secondary-gray {
         background-color: $secondary_colorGray;
+    }
+}
+
+.credits {
+    display: block;
+    float: left;
+    width: 100%;
+
+    a {
+        font-size: 14px;
+        padding-right: 7px;
+        border-right: 1px solid $secondary_colorGray;
+
+        &:last-child {
+            padding-right: 0;
+            border: none;
+        }
     }
 }
