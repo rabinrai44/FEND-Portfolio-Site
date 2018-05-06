@@ -72,10 +72,7 @@ section {
     height: 400px;
     background-image: url("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73970e97b923e72be9355cb15099091&auto=format&fit=crop&w=1294&q=80");
     background-position: right;
-    background-size: cover;
-    transition: all 0.4s ease-in-out; }
-    .hero-inner:hover {
-      opacity: .7; }
+    background-size: cover; }
 
 .header {
   height: 200px;
@@ -109,10 +106,9 @@ section {
     text-align: center; }
   .work-item--img {
     margin: 0;
-    opacity: .8;
     transition: all 0.4s ease-in; }
     .work-item--img:hover {
-      opacity: 1; }
+      opacity: .6; }
   .work-item--title {
     font-size: 1.15rem;
     margin-top: 10px;
