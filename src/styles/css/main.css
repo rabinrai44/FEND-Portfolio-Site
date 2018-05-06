@@ -113,3 +113,44 @@ section {
   .work-item--desc {
     margin: 0;
     padding: 15px; }
+
+/*============ Footer Styles ============*/
+.footer {
+  padding-top: 3rem;
+  width: 100%; }
+  .footer-content--left {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-right: 4rem; }
+  .footer-content--right {
+    float: right;
+    width: 50%;
+    padding-left: 4rem; }
+  .footer .section-title {
+    color: #368cbf; }
+  .footer .social-group {
+    display: block; }
+    .footer .social-group a {
+      color: #33363b;
+      margin-right: 20px;
+      opacity: .9; }
+      .footer .social-group a:last-child {
+        margin-right: 0; }
+
+.color-group {
+  display: block; }
+  .color-group .color {
+    margin-right: 15px;
+    padding: 0;
+    float: left;
+    height: 60px;
+    width: 70px; }
+  .color-group .primary-1 {
+    background-color: #7ebc59; }
+  .color-group .primary-2 {
+    background-color: #368cbf; }
+  .color-group .secondary {
+    background-color: #33363b; }
+  .color-group .secondary-gray {
+    background-color: #eaeaea; }
