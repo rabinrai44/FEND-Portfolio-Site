@@ -55,7 +55,14 @@ button {
     opacity: .8; }
 
 .hero {
-  background-color: green; }
+  float: left;
+  margin-top: -20px;
+  width: 100%; }
+  .hero-inner {
+    height: 300px;
+    background-image: linear-gradient(rgba(51, 54, 59, 0.3), rgba(54, 140, 191, 0.9)), url("../../images/coding_day.png");
+    background-position: center center;
+    background-size: cover; }
 
 .header {
   height: 200px;
