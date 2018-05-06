@@ -1,0 +1,31 @@
+/*============ Work Styles ============*/
+.work {
+    margin: 0;
+    padding: 0;
+}
+
+.work-item {
+    display: flex;
+    justify-content: space-between;
+
+    &--list {
+        flex-basis: 32%;
+        text-align: center;
+    }
+
+    &--img {
+        margin: 0;
+    }
+
+    &--title {
+        font-size: 1.15rem;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &--desc {
+        margin: 0;
+        padding: 15px;
+    }
+}
