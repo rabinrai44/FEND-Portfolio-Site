@@ -3,10 +3,8 @@
     padding-top: 3rem;
     width: 100%;
     
-    
     &-content--left {
-        width: 100%;
-        text-align: center;
+        display: none;
     }
 
     &-content--right {
@@ -33,11 +31,30 @@
                 margin-right: 0;
             }
         }
+
+        .fa-facebook {
+            color: $facebook_color;
+        }
+
+        .fa-twitter-square {
+            color: $twitter_color;
+        }
+
+        .fa-github-square {
+            color: $github_color;
+        }
+
+        .fa-linkedin {
+            color: $linkedin_color;
+        }
     }
 
+    .email {
+        color: $primary_color;
+    }
     .copyright {
         max-width: 1024px;
-        height: 60px;
+        padding: 4rem 0;
         margin: 0 auto;
         text-align: center;
     }
@@ -76,9 +93,15 @@
     display: block;
     float: left;
     width: 100%;
+    padding: 1rem 0;
+
+    h5 {
+        display: inline;
+    }
 
     a {
-        font-size: 14px;
+        display: inline;
+        font-size: 12px;
         padding-right: 7px;
         border-right: 1px solid $secondary_colorGray;
 

@@ -16,6 +16,7 @@
     }
 
     .nav-item {
+        text-align: right;
         
         &--title {
             font-size: 3rem;
@@ -24,6 +25,7 @@
         &--subtitle {
             font-size: 1.15rem;
             margin-top: -5px;
+            float: right;
         }
     }
 
@@ -32,11 +34,30 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
     }
+
+    .footer-content--left {
+        display: block;
+        width: 50%;
+        float: left;
+        padding-right: 1rem;
+    }
+
+    .footer-content--right {
+        float: right;
+        width: 50%;
+        text-align: left;
+        padding-left: 1rem;
+
+        .section-title {
+            text-align: left;
+        }
+    }
 }
 
 /* Media Queries - Medium */
 @media screen and (min-width: 960px) {
     .logo {
+        display: block;
         color: $primary_color;
         font-size: 4rem;
         font-weight: bold;
@@ -51,6 +72,7 @@
     }
 
     .nav-item {
+        text-align: right;
     
         &--title {
             font-size: 4rem;
@@ -58,8 +80,8 @@
     
         &--subtitle {
             font-size: 1.55rem;
-            float: right;
             margin-top: -20px;
+            float: right;
         }
     }
     .hero {
@@ -87,19 +109,30 @@
         }
     }
 
+    .footer {
+
+        .section-title {
+            text-align: left;
+        }
+    }
+
     .footer-content--left {
+        display: block;
         width: 50%;
         float: left;
-        text-align: left;
-        padding-right: 4rem;
+        padding-right: 1rem;
     }
 
     .footer-content--right {
         float: right;
         width: 50%;
+        text-align: left;
         padding-left: 4rem;
-    }
 
+        .section-title {
+            text-align: left;
+        }
+    }
     
 }
 
