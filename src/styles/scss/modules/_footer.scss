@@ -5,20 +5,20 @@
     
     
     &-content--left {
-        float: left;
-        width: 50%;
-        text-align: left;
-        padding-right: 4rem;
+        width: 100%;
+        text-align: center;
     }
 
     &-content--right {
-        float: right;
-        width: 50%;
-        padding-left: 4rem;
+        float: left;
+        width: 100%;
+        text-align: center;
+        
     }
 
     .section-title {
         color: $primary_color_2;
+        text-align: center;
     }
 
     .social-group {
