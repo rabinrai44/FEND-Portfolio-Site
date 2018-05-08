@@ -16,7 +16,6 @@
     }
 
     &:hover {
-        transform: traslateY(-3px);
         box-shadow: 0 1rem 2rem rgba($secondary_color, .2);
 
         &::after {
