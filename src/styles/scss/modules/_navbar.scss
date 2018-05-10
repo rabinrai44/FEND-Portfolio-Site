@@ -11,7 +11,7 @@
     &--title {
         color: $secondary_color;
         font-size: 2.75rem;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 5px;
         margin: 0;
         padding: 0;
@@ -21,8 +21,8 @@
         color: $secondary_color;
         font-size: 1.15rem;
         font-weight: 600;
-        margin-bottom: 10px;
         opacity: 0.8;
+        margin-top: -15px;
         text-align: center;
     }
 }

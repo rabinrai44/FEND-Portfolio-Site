@@ -5,8 +5,8 @@
     padding: 0;
     text-align: center;
 
-    .wrapper {
-        margin-bottom: 2.5rem;
+    &-top {
         border-bottom: 3px solid $primary_color;
+        margin-bottom: 10px;
     }
 }

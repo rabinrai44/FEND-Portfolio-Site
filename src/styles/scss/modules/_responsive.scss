@@ -44,10 +44,11 @@
     }
 
     .hero {
+        
         &-inner {
-        min-height: 35vh;
-    }
-    &-content--title {
+            min-height: 45vh;
+        }
+        &-content--title {
         font-size: 2.5rem;
         font-weight: bold;
         width: 90%;
@@ -60,6 +61,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
+
+        &--title {
+            font-size: 1.15rem;
+        }
     }
 
     .footer {
@@ -144,7 +149,7 @@
     
     .hero {
             &-inner {
-            min-height: 40vh;
+            min-height: 50vh;
         }
         &-content--title {
             color: #fff;
@@ -163,6 +168,10 @@
     .work-item {
         display: flex;
         justify-content: space-between;
+
+        &--title {
+            font-size: 1.18rem;
+        }
 
         &--list {
             flex-basis: 32%;
