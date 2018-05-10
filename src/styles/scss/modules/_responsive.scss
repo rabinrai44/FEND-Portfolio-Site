@@ -1,16 +1,30 @@
 
+/*============================
+    MEDIA QUERIES
+==============================*/
+
 /* Media Queries - Small */
 @media screen and (min-width: 600px) and (max-width: 959px) {
+    .header {
+        &-top {
+            display: flex;
+            justify-content: space-between;
+
+            .col-2 {
+                flex-basis: 50%;
+            }
+        }
+    }
+
     .logo {
-        display: block;
-        color: $primary_color;
+        text-align: left;
         font-size: 3rem;
         font-weight: bold;
-        float: left;
         margin: 0;
     }
 
     #nav {
+        width: 100%;
         margin-top: 0;
         margin-left: auto;
     }
@@ -25,9 +39,22 @@
         &--subtitle {
             font-size: 1.15rem;
             margin-top: -5px;
-            float: right;
+            text-align: right;
         }
     }
+
+    .hero {
+        &-inner {
+        min-height: 35vh;
+    }
+    &-content--title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 90%;
+        line-height: 1.65;
+        margin: 1rem auto;
+    }
+}
 
     .work-item {
         display: grid;
@@ -35,34 +62,64 @@
         grid-gap: 1em;
     }
 
-    .footer-content--left {
-        display: block;
-        width: 50%;
-        float: left;
-        padding-right: 1rem;
-    }
-
-    .footer-content--right {
-        float: right;
-        width: 50%;
+    .footer {
         text-align: left;
-        padding-left: 1rem;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-content {
+            flex-basis: 50%;
+
+            &:first-child {
+                padding-right: 1rem;
+            }
+
+            &:last-child {
+                padding-left: 1rem;
+            }
+        }
 
         .section-title {
             text-align: left;
         }
+
+        .social-group {
+            margin: 0;
+        }
+    }
+
+    .btn {
+        &,
+        &:link,
+        &:visited {
+            padding: 1.20rem 3rem;
+            border-radius: 4rem;
+            font-size: 1.10rem;
+        }
+    
     }
 }
 
 /* Media Queries - Medium */
 @media screen and (min-width: 960px) {
+    .header {
+        &-top {
+            display: flex;
+            justify-content: space-between;
+
+            .col-2 {
+                flex-basis: 50%;
+            }
+        }
+    }
     .logo {
-        display: block;
         color: $primary_color;
         font-size: 4rem;
         font-weight: bold;
         width: 100px;
-        float: left;
         margin: 0;
     }
 
@@ -81,18 +138,21 @@
         &--subtitle {
             font-size: 1.55rem;
             margin-top: -20px;
-            float: right;
+            text-align: right;
         }
     }
+    
     .hero {
             &-inner {
-            min-height: 400px;
+            min-height: 40vh;
         }
         &-content--title {
             color: #fff;
             font-size: 3rem;
             font-weight: bold;
-            height: 100px
+            width: 80%;
+            line-height: 1.65;
+            margin: 1rem auto;
         }
     }
     
@@ -110,27 +170,43 @@
     }
 
     .footer {
+        text-align: left;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-content {
+            flex-basis: 50%;
+
+             &:first-child {
+                padding-right: 2rem;
+            }
+
+            &:last-child {
+                padding-left: 2rem;
+            }
+        }
 
         .section-title {
             text-align: left;
         }
+
+        .social-group {
+            margin: 0;
+        }
+        
     }
 
-    .footer-content--left {
-        display: block;
-        width: 50%;
-        float: left;
-        padding-right: 1rem;
-    }
-
-    .footer-content--right {
-        float: right;
-        width: 50%;
-        text-align: left;
-        padding-left: 4rem;
-
-        .section-title {
-            text-align: left;
+    .btn {
+        &,
+        &:link,
+        &:visited {
+            padding: 1.25rem 4rem;
+            border-radius: 5rem;
+            font-size: 1.15rem;
+    
         }
     }
     

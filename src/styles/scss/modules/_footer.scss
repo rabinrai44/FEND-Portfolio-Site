@@ -2,112 +2,70 @@
 .footer {
     padding-top: 3rem;
     width: 100%;
+    text-align: center;
     
-    &-content--left {
-        display: none;
-    }
-
-    &-content--right {
-        float: left;
-        width: 100%;
-        text-align: center;
-        
-    }
-
     .section-title {
         color: $primary_color_2;
         text-align: center;
     }
-
+    
     .social-group {
-        display: block;
-
+        display: flex;
+        max-width: 30%;
+        margin: 0 auto;
+        
         a {
             color: $secondary_color;
-            margin-right: 20px;
             opacity: .9;
-
-            &:last-child {
-                margin-right: 0;
+            
+            &:not(:last-child) {
+                margin-right: 10px;
             }
         }
-
+        
         .fa-facebook {
             color: $facebook_color;
         }
-
+        
         .fa-twitter-square {
             color: $twitter_color;
         }
-
+        
         .fa-github-square {
             color: $github_color;
         }
-
+        
         .fa-linkedin {
             color: $linkedin_color;
         }
     }
-
+    
     .email {
         color: $primary_color;
     }
     .copyright {
         max-width: 1024px;
-        padding: 4rem 0;
+        padding: 1rem 0;
         margin: 0 auto;
         text-align: center;
     }
 }
 
-.color-group {
-    display: block;
-    float: left;
-    height: 100%;
-
-    .color {
-        margin-right: 15px;
-        padding: 0;
-        float: left;
-        height: 40px;
-        width: 50px;
-    }
-    .primary-1 {
-        background-color: $primary_color;
-    }
-
-    .primary-2 {
-        background-color: $primary_color_2;
-    }
-
-    .secondary {
-        background-color: $secondary_color;
-    }
-
-    .secondary-gray {
-        background-color: $secondary_colorGray;
-    }
-}
-
 .credits {
-    display: block;
-    float: left;
     width: 100%;
     padding: 1rem 0;
-
+    
     h5 {
         display: inline;
     }
-
+    
     a {
         display: inline;
         font-size: 12px;
-        padding-right: 7px;
-        border-right: 1px solid $secondary_colorGray;
-
-        &:last-child {
-            padding-right: 0;
-            border: none;
+        
+        &:not(:last-child) {
+            padding-right: 7px;
+            border-right: 1px solid $secondary_colorGray;
         }
     }
 }
